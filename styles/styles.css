@@ -14,7 +14,7 @@ footer {
     color: #fff;
     padding: 10px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 main {
@@ -37,19 +37,36 @@ h2 {
     font-size: 1rem;
 }
 
-img {
+main img {
     width: 100%;
     height: auto;
     box-shadow: 0 0 20px #444;
     margin: 20px 0;
+    border-radius: 50px;
+}
+
+p {
+    padding: o;
 }
 
 aside {
-    margin: 50px;
+    width: 200px;
+    margin: 2em;
+    padding: 1em;
+    border: #444;
+    background-color: #d2d2dc;
     text-align: center;
+    color: #181819;
     font-family: Verdana, Tahoma, sans-serif;
-    font-size: 1rem;
-    text-align: justify;
+    font-size: 1em;
+}
+
+aside img {
+    border-radius: 50px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px #444;
 }
 
 ul {
