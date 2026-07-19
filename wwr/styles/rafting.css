@@ -49,6 +49,12 @@ section {
     text-decoration: none;
 }
 
+.socialmedia img {
+    width: 50px;
+    height: auto;
+
+}
+
 .hero {
     position: relative;
 }
