@@ -3,30 +3,44 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Georgia, serif;
+
+}
+
+:root {
+    --primary-color: rgb(13, 99, 142);
+    --secondary-color: rgb(10, 40, 54);
+    --accent-color: #b46845;
 }
 
 a {
     color: #6f1c0f;
+    transition: color 0.3s ease;
+    text-decoration: 0.3s ease;
 }
 
 a:visited {
-    color: #fbfcfc;
+    color: #fff;
 }
 
 a:hover {
-    color: #b46845;
-    text-decoration: underline;
+    color: var(--accent-color);
 }
 
 a:active {
     color: #d29c9c;
 }
 
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
 header nav {
     display: flex;
-    /* puts items side by side */
     gap: 20px;
-    /* space between links */
     justify-content: center;
 }
 
@@ -36,22 +50,33 @@ header nav a {
 }
 
 nav {
-    background-color: rgb(10, 40, 54);
-    padding: 3px;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 10px;
+    padding: 0.5rem;
     margin: 10px;
+    font-size: 1.5rem;
+    font-weight: 800;
 }
 
 h1,
 h2 {
-    color: rgb(13, 99, 142);
+    color: var(--primary-color);
     margin-bottom: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    margin: 20px;
+    border-bottom: 3px solid black;
 }
 
 main img {
@@ -60,7 +85,7 @@ main img {
     border: 1px solid rgb(82, 87, 95);
     border-radius: 10px;
     padding: 5px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     float: right;
     margin-left: 3%;
     margin-bottom: 2px;
@@ -72,11 +97,14 @@ p {
     line-height: 20px;
     margin-bottom: 25px;
     margin-bottom: 3%;
+
 }
 
 main {
     max-width: 600px;
-    margin: 15px;
+    margin: 1rem;
+    grid-column: 2;
+    margin: 1rem;
 
 }
 
@@ -84,7 +112,7 @@ aside {
     max-width: 600px;
     border-radius: 15px;
     color: rgb(14, 68, 105);
-    line-height: 20px;
+    line-height: 1.5rem;
     text-align: justify;
     position: relative;
 }
@@ -122,7 +150,7 @@ footer p {
 /* class selectors */
 .box {
     padding: 1rem;
-    margin: 1rem 0 2 rem;
+    margin: 1rem 0 2rem;
     border: 3px solid rgba(83, 71, 56, 0.309);
     border-radius: 5px;
     background-color: rgb(185, 206, 218);
@@ -136,12 +164,10 @@ footer p {
 
 .image-container {
     position: relative;
-    display: inline-block;
 }
 
 .image-container img {
     width: 100%;
-    /* or set a fixed width if needed */
     height: auto;
 }
 
@@ -155,3 +181,18 @@ footer p {
     font-weight: bold;
     padding: 5px 10px;
     text-shadow: 5px 3px 3px rgba(59, 59, 59, 0.507);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: start;
+}
+
+aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1;
+    grid-row: 1;
+}
