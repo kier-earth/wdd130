@@ -34,15 +34,16 @@ h2 {
 header {
     margin: 1rem auto;
     display: flex;
+    justify-content: space-between;
     grid-template-columns: 200px 1fr 1fr;
     align-items: center;
-    border-bottom: 1px solid #ccc;
-    max-width: 1000px;
+    border-bottom: 5px solid #ccc;
+    background-color: #f2f2f2;
 }
 
 header img {
     width: 200px;
-    padding: 25px;
+    padding: 18px;
 }
 
 nav,
@@ -66,14 +67,16 @@ article {
 
 nav ul {
     display: flex;
+    list-style: none;
 }
 
 .navigation a {
-    display: block;
+    display: flex;
     color: var(--primary-color);
-    padding: 40px;
+    padding: 30px;
     text-decoration: none;
     font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .navigation a:hover {
@@ -154,7 +157,7 @@ section {
 }
 
 .history-layout img {
-    width: 200px;
+    width: 150px;
 }
 
 #adv-history h2 {
@@ -166,12 +169,6 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 5px;
     background-color: #f2f2f2;
-}
-
-.footer-logos img {
-    height: 40px;
-    margin-left: 25px;
-    gap: 100px;
 }
