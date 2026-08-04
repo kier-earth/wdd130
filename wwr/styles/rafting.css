@@ -161,6 +161,18 @@ section {
     gap: 20px;
 }
 
+#serve-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+#serve-section h2 {
+    text-align: center;
+    grid-column: 1/4;
+}
+
 .history-layout img {
     width: 150px;
 }
