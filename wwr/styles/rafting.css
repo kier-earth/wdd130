@@ -112,7 +112,7 @@ section {
     align-items: start;
 }
 
-.map {
+.maps {
     grid-column: 1;
 }
 
@@ -121,6 +121,13 @@ section {
     max-width: 500px;
     margin: 5px auto;
     padding: 10px;
+}
+
+.maps iframe {
+    border: 0;
+    width: 100%;
+    max-width: 450px;
+    height: 450px;
 }
 
 .form label,
@@ -142,7 +149,6 @@ section {
 }
 
 .subs {
-    font-size: 1rem;
     display: inline-flex;
     align-items: center;
     font-size: 16px;
@@ -173,6 +179,12 @@ section {
     font-size: 16px;
 }
 
+.socialmedia {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
 .socialmedia a {
     text-decoration: none;
 }
@@ -180,12 +192,6 @@ section {
 .socialmedia img {
     width: 50px;
     height: auto;
-}
-
-.socialmedia {
-    display: flex;
-    gap: 15px;
-    align-items: center;
 }
 
 .hero {
