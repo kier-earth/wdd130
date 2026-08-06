@@ -20,7 +20,9 @@ body {
 
 header,
 main,
-footer {
+footer,
+#serve-section,
+.contact-container {
     width: 840px;
     margin: 0 auto;
 }
@@ -84,10 +86,94 @@ nav ul {
     text-decoration: none;
 }
 
+.contact h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 40px;
+
+}
+
+.contact {
+    text-align: center;
+    background-color: #fff;
+    line-height: 0.5px;
+}
+
 section {
     margin: 16px;
     padding: 8px;
     background-color: var(--accent2-color);
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: start;
+}
+
+.map {
+    grid-column: 1;
+}
+
+.form {
+    grid-column: 2;
+    max-width: 500px;
+    margin: 5px auto;
+    padding: 10px;
+}
+
+.form label,
+.form p {
+    font-weight: bold;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.legend {
+    padding: 0.5rem;
+    color: #2c3e50;
+    font-size: 1.3em;
+}
+
+.subs {
+    font-size: 1rem;
+    display: inline-flex;
+    /* keeps box + text side by side */
+    align-items: center;
+    /* vertically centers them */
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.subs input[type="checkbox"],
+.form input[type="radio"] {
+    display: inline-block;
+    width: auto;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    /* spacing between options */
+    font-size: 16px;
+}
+
+.form-buttons {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.form-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
 }
 
 .socialmedia a {
@@ -190,6 +276,7 @@ section {
 
 #footer-layout {
     display: flex;
+    margin-top: 20px;
     justify-content: space-between;
     align-items: center;
     padding: 5px;
