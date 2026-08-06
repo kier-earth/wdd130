@@ -46,32 +46,32 @@
             <div class="form">
                 <form>
                     <label for="name">Name</label>
-                    <input type="name" id="name" name="name" placeholder="Enter your name">
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
 
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                    <input type="text" id="email" name="email" placeholder="Enter your email">
 
                     <fieldset>
                         <legend id="legend">Message Purpose</legend>
 
                         <label class="radio-option">
-                            <input type="radio" name="purpose" value="general" checked>
+                            <input type="radio" id="general" name="purpose" value="general" checked>
                             General Inquiry
                         </label>
 
                         <label class="radio-option">
-                            <input type="radio" name="purpose" value="reservation">
+                            <input type="radio" id="reservation" name="purpose" value="reservation">
                             Reservation Question
                         </label>
 
                         <label class="radio-option">
-                            <input type="radio" name="purpose" value="suggestion">
+                            <input type="radio" id="suggestion" name="purpose" value="suggestion">
                             Website Suggestion
                         </label>
                     </fieldset>
 
                     <label for="message">Message</label>
-                    <textarea id="text" name="message" rows="4"></textarea>
+                    <textarea id="message" name="message" rows="4"></textarea>
 
                     <label class="subs"><input type="checkbox" id="subscribe"
                           name="subscribe">Please subscribe
