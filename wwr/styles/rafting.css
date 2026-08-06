@@ -135,7 +135,7 @@ section {
     margin-top: 5px;
 }
 
-.legend {
+#legend {
     padding: 0.5rem;
     color: #2c3e50;
     font-size: 1.3em;
@@ -144,9 +144,7 @@ section {
 .subs {
     font-size: 1rem;
     display: inline-flex;
-    /* keeps box + text side by side */
     align-items: center;
-    /* vertically centers them */
     font-size: 16px;
     margin-top: 10px;
 }
@@ -161,7 +159,6 @@ section {
     display: flex;
     align-items: center;
     margin-bottom: 8px;
-    /* spacing between options */
     font-size: 16px;
 }
 
