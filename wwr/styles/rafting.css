@@ -266,12 +266,6 @@ section {
     width: 150px;
 }
 
-.socialmedia {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-}
-
 #adv-history h2 {
     text-align: center;
     padding-bottom: 10px;
