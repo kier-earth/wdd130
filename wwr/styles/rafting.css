@@ -318,7 +318,7 @@ table {
 }
 
 table th {
-    background-coloR: #65350b;
+    background-color: #65350b;
     color: #fff;
     padding: 12px;
     text-align: center;
@@ -371,14 +371,23 @@ figcaption {
     margin: 10px;
 }
 
-.serve-section img {
-    display: flex;
-    /* puts images side by side */
-    flex-wrap: wrap;
-    /* allows wrapping on smaller screens */
-    justify-content: center;
-    /* centers them horizontally */
-    gap: 20px;
-    /* equal spacing between images */
+.cta {
+    text-align: center;
     margin: 2rem 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 12px;
+    margin: 5px;
+    background-color: #0077cc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.cta-button:hover {
+    background-color: #005fa3;
 }
